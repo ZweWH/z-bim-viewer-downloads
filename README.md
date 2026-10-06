@@ -2,13 +2,13 @@
 
 Windows portable BIM viewing, coordination and quantity reports.
 
-**[Download the portable viewer](https://github.com/Kwaybadu/z-bim-viewer-downloads/releases)**
+**[Download the portable viewer](https://github.com/ZweWH/z-bim-viewer-downloads/releases)**
 
 This repository contains public download instructions and release notes. Application development source is maintained separately. A valid device license is required to use the viewer; downloading the ZIP does not grant activation.
 
 ## Install
 
-1. Open **Releases** above and download `Z-BIM-Viewer-0.4.1-Windows-x64-Portable.zip` and its `.sha256` checksum.
+1. Open **Releases** above and download `Z-BIM-Viewer-0.4.2-Windows-x64-Portable.zip` and its `.sha256` checksum.
 2. Extract the complete ZIP into a writable folder. Keep all files and the ThirdParty folder together.
 3. Run **Start Z BIM Viewer.cmd**. Keep its console open while using the viewer.
 4. Your browser opens the local viewer. On a new PC, request a device license from the person supplying the software, then import the supplied `.zlicense` file.
@@ -23,7 +23,7 @@ Choose the named **Windows-x64-Portable.zip** asset. GitHub's automatic **Source
 - Tile quantities, tile layouts and Excel reports.
 - Construction-joint areas, casting stages and concrete-volume schedules.
 
-The current release is a **preview** for testing. Quantities with review warnings need checking before use. Large-model speed and detail depend on the PC and model geometry.
+The current release is **0.4.2**, a **preview** for testing. Recalculate earlier concrete results after updating. Quantities with review warnings need checking before use. Large-model speed and detail depend on the PC and model geometry.
 
 ## Requirements
 
@@ -44,7 +44,7 @@ Project data is separate from this download. Keep the whole project folder, incl
 In PowerShell, compare this result with the downloaded `.sha256` file:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 '.\Z-BIM-Viewer-0.4.1-Windows-x64-Portable.zip'
+Get-FileHash -Algorithm SHA256 '.\Z-BIM-Viewer-0.4.2-Windows-x64-Portable.zip'
 ```
 
 The executable is not yet Authenticode-signed. A checksum verifies the downloaded bytes; it is not a publisher signature. Do not disable antivirus to install it.
